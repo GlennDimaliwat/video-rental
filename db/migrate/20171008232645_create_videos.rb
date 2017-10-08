@@ -5,7 +5,7 @@ class CreateVideos < ActiveRecord::Migration[5.1]
       t.string :genre
       t.integer :year_released
       t.string :classification
-      t.string :description
+      t.text :description
 
       t.timestamps
     end
