@@ -1,0 +1,19 @@
+<h1>My Rentals</h1>
+
+<table class="table table-condensed">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>When</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+        <% @rentals.each do |rental| %>
+        <tr>
+            <td><h2><%= rental.video.name %></h2></td>
+            <td><%= rental.created_at %></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
